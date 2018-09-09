@@ -42,6 +42,10 @@ if !exists("g:workspace_tab_icon")
     let g:workspace_tab_icon = "#"
 endif
 
+if !exists("g:workspace_hide_terms")
+    let g:workspace_hide_terms = 0
+endif
+
 if !exists("g:workspace_hide_ft_buffers")
     let g:workspace_hide_ft_buffers = ['qf']
 endif

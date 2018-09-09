@@ -101,6 +101,13 @@ vimrc file, using `let <optiona-name> = <option-value>`:
   let g:workspace_hide_ft_buffers = ['qf']
   ```
 
+* `g:workspace_hide_terms` - don't show terminal windows in the tabline
+
+  Default:
+  ```
+  let g:workspace_hide_terms = 0
+  ```
+
 * `g:workspace_powerline_separators` - if set to `1`, use powerline separators
   in between buffers and tabs in the tabline. This is a shortcut, so that you do
   not have to configure the separators individually.

@@ -22,6 +22,10 @@ function! s:GetBuffers()
             continue
         endif
 
+        if (g:workspace_hide_terms==1)&&(buffer_name =~# 'term://*')
+            continue
+        endif
+
         if index(g:workspace_hide_ft_buffers, getbufvar(bufno, '&filetype')) >= 0
             continue
         endif
